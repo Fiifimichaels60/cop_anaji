@@ -108,8 +108,8 @@ const Blog: React.FC = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold mb-4">{t('blog.title')}</h1>
           <div className="w-24 h-1 bg-yellow-500 mx-auto mb-4"></div>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Stay connected with our community through inspiring stories, spiritual insights, and church updates.
+          <p className="text-2xl font-semibold text-gray-100 max-w-4xl mx-auto leading-relaxed">
+            {t('blog.subtitle') || "Insightful perspectives on faith, life, and community transformation"}
           </p>
         </div>
       </section>

@@ -20,15 +20,18 @@ const Sermons: React.FC = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetchSermons()
-  }, [i18n.language])
+    // Wait for language to be ready before initial fetch
+    if (i18n.resolvedLanguage) {
+      fetchSermons()
+    }
+  }, [i18n.resolvedLanguage])
 
   const fetchSermons = async () => {
     try {
       const { data, error } = await supabase
         .from('sermons')
         .select('*')
-        .eq('language', i18n.language)
+        .eq('language', i18n.resolvedLanguage)
         .order('date', { ascending: false })
 
       if (error) throw error

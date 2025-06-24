@@ -303,6 +303,7 @@ i18n
     resources,
     fallbackLng: 'en',
     debug: false,
+    initImmediate: false, // Important for SSR-like behavior in client-side apps
     detection: {
       order: ['navigator', 'htmlTag', 'querystring', 'cookie', 'localStorage'],
       caches: ['cookie']

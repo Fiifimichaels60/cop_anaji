@@ -21,15 +21,17 @@ const Blog: React.FC = () => {
   const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null)
 
   useEffect(() => {
-    fetchBlogs()
-  }, [i18n.language])
+    if (i18n.resolvedLanguage) {
+      fetchBlogs()
+    }
+  }, [i18n.resolvedLanguage])
 
   const fetchBlogs = async () => {
     try {
       const { data, error } = await supabase
         .from('blogs')
         .select('*')
-        .eq('language', i18n.language)
+        .eq('language', i18n.resolvedLanguage)
         .order('date', { ascending: false })
 
       if (error) throw error

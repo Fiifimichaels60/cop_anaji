@@ -55,13 +55,13 @@ const Sermons: React.FC = () => {
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }} // 👈 Use local image
+          style={{ backgroundImage: `url(${heroImage})` }}
         ></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold mb-4">{t('sermons.title')}</h1>
           <div className="w-24 h-1 bg-yellow-500 mx-auto mb-4"></div>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Listen to inspiring messages that will strengthen your faith and guide your spiritual journey.
+            {t('sermons.subtitle')}
           </p>
         </div>
       </section>

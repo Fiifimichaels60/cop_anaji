@@ -66,7 +66,7 @@ const Gallery: React.FC = () => {
           <h1 className="text-5xl font-bold mb-4">{t('gallery.title')}</h1>
           <div className="w-24 h-1 bg-yellow-500 mx-auto mb-4"></div>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Explore moments of worship, fellowship, and community service through our photo gallery.
+            {t('gallery.subtitle')}
           </p>
         </div>
       </section>

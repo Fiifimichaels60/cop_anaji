@@ -65,7 +65,7 @@ const Blog: React.FC = () => {
             <img 
               src={selectedPost.image_url} 
               alt={selectedPost.title}
-              className="w-full h-64 md:h-80 object-cover rounded-lg mb-8"
+              className="w-full max-w-2xl aspect-square object-cover rounded-lg mb-8 mx-auto"
             />
           )}
           

@@ -7,9 +7,9 @@ const About: React.FC = () => {
   const { t } = useTranslation()
 
   return (
-    <div className="py-16">
+    <div className="pb-16">
       {/* Hero Section */}
-      <section className="relative pt-16 pb-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+      <section className="relative pt-0 pb-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div 
           className="absolute inset-0 bg-cover bg-center"

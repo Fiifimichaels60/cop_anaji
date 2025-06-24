@@ -197,7 +197,7 @@ const Contact: React.FC = () => {
                       id="subject"
                       {...register('subject', { required: 'Subject is required' })}
                       className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200"
-                      placeholder="How can we help you?"
+                      placeholder="Please provide your phone number"
                     />
                     {errors.subject && (
                       <p className="mt-1 text-sm text-red-600">{errors.subject.message}</p>

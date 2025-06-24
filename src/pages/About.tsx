@@ -9,7 +9,7 @@ const About: React.FC = () => {
   return (
     <div className="py-16">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+      <section className="relative py-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white ">
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div 
           className="absolute inset-0 bg-cover bg-center"
@@ -140,14 +140,14 @@ const About: React.FC = () => {
                 Passionate about youth ministry and community outreach programs.
               </p>
             </div>
-            <div className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-300 opacity-50 blur-sm">
+            <div className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-300">
               <img 
                 src={heroImage}
                 alt="Hero"
                 className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
               />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Elder Menya </h3>
-              <p className="text-blue-600 font-medium mb-2">Church Elder</p>
+              <p className="text-blue-600 font-medium mb-2">Presiding Elder</p>
               <p className="text-gray-600 text-sm">
                 Dedicated to pastoral care and spiritual guidance for our members.
               </p>

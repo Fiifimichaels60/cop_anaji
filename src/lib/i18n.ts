@@ -303,6 +303,10 @@ i18n
     resources,
     fallbackLng: 'en',
     debug: false,
+    detection: {
+      order: ['navigator', 'htmlTag', 'querystring', 'cookie', 'localStorage'],
+      caches: ['cookie']
+    },
     interpolation: {
       escapeValue: false
     }

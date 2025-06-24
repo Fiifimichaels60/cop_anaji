@@ -41,8 +41,10 @@ const Home: React.FC = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetchHomeData()
-  }, [i18n.language])
+    if (i18n.resolvedLanguage) {
+      fetchHomeData()
+    }
+  }, [i18n.resolvedLanguage])
 
   const fetchHomeData = async () => {
     try {
@@ -50,19 +52,19 @@ const Home: React.FC = () => {
         supabase
           .from('events')
           .select('*')
-          .eq('language', i18n.language)
+          .eq('language', i18n.resolvedLanguage)
           .order('date', { ascending: true })
           .limit(3),
         supabase
           .from('sermons')
           .select('*')
-          .eq('language', i18n.language)
+          .eq('language', i18n.resolvedLanguage)
           .order('date', { ascending: false })
           .limit(3),
         supabase
           .from('blogs')
           .select('*')
-          .eq('language', i18n.language)
+          .eq('language', i18n.resolvedLanguage)
           .order('date', { ascending: false })
           .limit(3)
       ])

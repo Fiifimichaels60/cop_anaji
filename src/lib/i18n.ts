@@ -55,7 +55,7 @@ const resources = {
         form: {
           name: 'Name',
           email: 'Email',
-          subject: 'Subject',
+          subject: 'Phone Number',
           message: 'Message',
           send: 'Send Message',
           success: 'Message sent successfully!',
